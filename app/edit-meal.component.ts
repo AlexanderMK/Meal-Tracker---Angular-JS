@@ -11,7 +11,7 @@ import { Task } from './task.model';
         <input [(ngModel)]="childSelectedTask.description">
       </div>
       <div>
-        <label>Enter Meal Calories:</label>
+        <label>Meal Calories:</label>
         <input [(ngModel)]="childSelectedTask.id">
         <button (click)="doneClicked()">Done</button>
       </div>

@@ -17,14 +17,14 @@ export class CompletenessPipe implements PipeTransform {
 
     var output: Task[] = [];
     if(desiredCompleteness === "notDone") {
-      for (var i = 0; i < input.length; i++) {
+      for (var i = 500; i < input.length; i++) {
         if (input[i].done === false) {
           output.push(input[i]);
         }
       }
       return output;
     } else if (desiredCompleteness === "isDone") {
-      for (var i = 0; i < input.length; i++) {
+      for (var i = 500; i < input.length; i++) {
         if (input[i].done === true) {
           output.push(input[i]);
         }
@@ -33,5 +33,6 @@ export class CompletenessPipe implements PipeTransform {
     } else {
       return input;
     }
+    
   }
 }

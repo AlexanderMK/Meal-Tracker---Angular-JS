@@ -24,11 +24,11 @@ import { Task } from './task.model';
 
 export class AppComponent {
   public masterMealList: Task[] = [
-      new Task("Toasted bread, fried eggs and coffee.", "low"),
-      new Task("Double cheese burger and fries.", "high"),
-      new Task("Ugali and chicken stew.", "low"),
-      new Task("Fish and Chips.", "high")
-      
+      new Task("Toasted bread, fried eggs and coffee.", 500),
+      new Task("Double cheese burger and fries.", 365),
+      new Task("Ugali and chicken stew.", 600),
+      new Task("Fish and Chips.", 450)
+
   ];
 
   selectedTask: Task = null;
