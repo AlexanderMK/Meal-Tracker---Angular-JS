@@ -10,7 +10,7 @@ import { Task } from './task.model';
       <input #newDescription>
     </div>
     <div>
-      <label>Enter High/Low Calories:</label>
+      <label>High/Low Calories:</label>
       <input #newId>
       <button (click)="
         addClicked(newDescription.value, newId.value);
@@ -21,7 +21,7 @@ import { Task } from './task.model';
   `
 })
 
-export class NewTaskComponent {
+export class NewMealComponent {
   @Output() newTaskSender = new EventEmitter();
   addClicked(description: string, id: string) {
     var newTaskToAdd: Task = new Task(description, id);

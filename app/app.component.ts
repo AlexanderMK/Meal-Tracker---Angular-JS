@@ -28,8 +28,7 @@ export class AppComponent {
       new Task("Double cheese burger and fries.", "high"),
       new Task("Ugali and chicken stew.", "low"),
       new Task("Fish and Chips.", "high")
-      new Task("Ugali and Omena.", "low")
-      new Task("Pilau Biryani.", "high")
+      
   ];
 
   selectedTask: Task = null;
